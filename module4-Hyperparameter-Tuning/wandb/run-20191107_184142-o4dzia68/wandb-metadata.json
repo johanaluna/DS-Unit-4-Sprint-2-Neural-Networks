@@ -1,0 +1,29 @@
+{
+    "root": "/storage/DS-Unit-4-Sprint-2-Neural-Networks",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/johanaluna/DS-Unit-4-Sprint-2-Neural-Networks.git",
+        "commit": "5ad8f2466bfb53e28967823aff456b127cc5184b"
+    },
+    "email": "johana.luna87@gmail.com",
+    "startedAt": "2019-11-07T18:41:36.720317",
+    "host": "729e257feb37",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "os": "Linux-4.4.0-130-generic-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.8",
+    "gpu": "Quadro M4000",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": "10.0.130",
+    "args": [
+        "-f",
+        "/root/.local/share/jupyter/runtime/kernel-222f1bf7-becb-4977-b591-ee72f5410413.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "brisk-brook-51",
+    "project": "boston",
+    "heartbeatAt": "2019-11-07T18:41:43.245532"
+}
