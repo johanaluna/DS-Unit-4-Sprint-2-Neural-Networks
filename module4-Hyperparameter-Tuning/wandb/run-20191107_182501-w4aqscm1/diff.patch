@@ -1,0 +1,268 @@
+diff --git a/module4-Hyperparameter-Tuning/LS_DS_424_Hyperparameter_Tuning_Lecture.ipynb b/module4-Hyperparameter-Tuning/LS_DS_424_Hyperparameter_Tuning_Lecture.ipynb
+index 7e1d510..a092b55 100644
+--- a/module4-Hyperparameter-Tuning/LS_DS_424_Hyperparameter_Tuning_Lecture.ipynb
++++ b/module4-Hyperparameter-Tuning/LS_DS_424_Hyperparameter_Tuning_Lecture.ipynb
+@@ -439,7 +439,7 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 4,
++   "execution_count": 3,
+    "metadata": {
+     "colab": {
+      "base_uri": "https://localhost:8080/",
+@@ -462,13 +462,13 @@
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+-      "Best: 0.65234375 using {'batch_size': 10, 'epochs': 20}\n",
+-      "Means: 0.65234375, Stdev: 0.033298728782667764 with: {'batch_size': 10, 'epochs': 20}\n",
+-      "Means: 0.6263020833333334, Stdev: 0.01813592223591682 with: {'batch_size': 20, 'epochs': 20}\n",
+-      "Means: 0.6041666666666666, Stdev: 0.037782859709757574 with: {'batch_size': 40, 'epochs': 20}\n",
+-      "Means: 0.5533854166666666, Stdev: 0.03210632293213009 with: {'batch_size': 60, 'epochs': 20}\n",
+-      "Means: 0.61328125, Stdev: 0.024079742199097563 with: {'batch_size': 80, 'epochs': 20}\n",
+-      "Means: 0.5611979166666666, Stdev: 0.038450060052691144 with: {'batch_size': 100, 'epochs': 20}\n"
++      "Best: 0.609375 using {'batch_size': 20, 'epochs': 20}\n",
++      "Means: 0.5846354166666666, Stdev: 0.03897559777889522 with: {'batch_size': 10, 'epochs': 20}\n",
++      "Means: 0.609375, Stdev: 0.01149968862803105 with: {'batch_size': 20, 'epochs': 20}\n",
++      "Means: 0.5481770833333334, Stdev: 0.05425173608333245 with: {'batch_size': 40, 'epochs': 20}\n",
++      "Means: 0.5950520833333334, Stdev: 0.056186065131227654 with: {'batch_size': 60, 'epochs': 20}\n",
++      "Means: 0.515625, Stdev: 0.09668790737363006 with: {'batch_size': 80, 'epochs': 20}\n",
++      "Means: 0.5299479166666666, Stdev: 0.03210632293213009 with: {'batch_size': 100, 'epochs': 20}\n"
+      ]
+     }
+    ],
+@@ -541,7 +541,7 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 5,
++   "execution_count": 4,
+    "metadata": {
+     "colab": {
+      "base_uri": "https://localhost:8080/",
+@@ -556,11 +556,11 @@
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+-      "Best: 0.7044270833333334 using {'batch_size': 20, 'epochs': 200}\n",
+-      "Means: 0.6666666666666666, Stdev: 0.028940248399600087 with: {'batch_size': 20, 'epochs': 20}\n",
+-      "Means: 0.6588541666666666, Stdev: 0.028940248399600087 with: {'batch_size': 20, 'epochs': 40}\n",
+-      "Means: 0.6848958333333334, Stdev: 0.03498705427745938 with: {'batch_size': 20, 'epochs': 60}\n",
+-      "Means: 0.7044270833333334, Stdev: 0.018414239093399672 with: {'batch_size': 20, 'epochs': 200}\n"
++      "Best: 0.69921875 using {'batch_size': 20, 'epochs': 200}\n",
++      "Means: 0.609375, Stdev: 0.04910080113272084 with: {'batch_size': 20, 'epochs': 20}\n",
++      "Means: 0.6419270833333334, Stdev: 0.012889967365379774 with: {'batch_size': 20, 'epochs': 40}\n",
++      "Means: 0.6432291666666666, Stdev: 0.03410364805653332 with: {'batch_size': 20, 'epochs': 60}\n",
++      "Means: 0.69921875, Stdev: 0.01940060472103039 with: {'batch_size': 20, 'epochs': 200}\n"
+      ]
+     }
+    ],
+@@ -720,36 +720,9 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 6,
++   "execution_count": 7,
+    "metadata": {},
+-   "outputs": [
+-    {
+-     "data": {
+-      "text/html": [
+-       "\n",
+-       "                Logging results to <a href=\"https://wandb.com\" target=\"_blank\">Weights & Biases</a> <a href=\"https://docs.wandb.com/integrations/jupyter.html\" target=\"_blank\">(Documentation)</a>.<br/>\n",
+-       "                Project page: <a href=\"https://app.wandb.ai/lambda-ds7/boston\" target=\"_blank\">https://app.wandb.ai/lambda-ds7/boston</a><br/>\n",
+-       "                Run page: <a href=\"https://app.wandb.ai/lambda-ds7/boston/runs/whw09rro\" target=\"_blank\">https://app.wandb.ai/lambda-ds7/boston/runs/whw09rro</a><br/>\n",
+-       "            "
+-      ],
+-      "text/plain": [
+-       "<IPython.core.display.HTML object>"
+-      ]
+-     },
+-     "metadata": {},
+-     "output_type": "display_data"
+-    },
+-    {
+-     "data": {
+-      "text/plain": [
+-       "W&B Run: https://app.wandb.ai/lambda-ds7/boston/runs/whw09rro"
+-      ]
+-     },
+-     "execution_count": 6,
+-     "metadata": {},
+-     "output_type": "execute_result"
+-    }
+-   ],
++   "outputs": [],
+    "source": [
+     "import wandb\n",
+     "from wandb.keras import WandbCallback"
+@@ -757,7 +730,7 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 8,
++   "execution_count": 10,
+    "metadata": {
+     "colab": {
+      "base_uri": "https://localhost:8080/",
+@@ -774,7 +747,7 @@
+        "\n",
+        "                Logging results to <a href=\"https://wandb.com\" target=\"_blank\">Weights & Biases</a> <a href=\"https://docs.wandb.com/integrations/jupyter.html\" target=\"_blank\">(Documentation)</a>.<br/>\n",
+        "                Project page: <a href=\"https://app.wandb.ai/lambda-ds7/boston\" target=\"_blank\">https://app.wandb.ai/lambda-ds7/boston</a><br/>\n",
+-       "                Run page: <a href=\"https://app.wandb.ai/lambda-ds7/boston/runs/kkgdtc31\" target=\"_blank\">https://app.wandb.ai/lambda-ds7/boston/runs/kkgdtc31</a><br/>\n",
++       "                Run page: <a href=\"https://app.wandb.ai/lambda-ds7/boston/runs/dj44f1m9\" target=\"_blank\">https://app.wandb.ai/lambda-ds7/boston/runs/dj44f1m9</a><br/>\n",
+        "            "
+       ],
+       "text/plain": [
+@@ -785,121 +758,36 @@
+      "output_type": "display_data"
+     },
+     {
+-     "name": "stdout",
+-     "output_type": "stream",
+-     "text": [
+-      "Train on 270 samples, validate on 134 samples\n",
+-      "Epoch 1/50\n",
+-      "270/270 [==============================] - 1s 3ms/sample - loss: 492.3539 - mse: 492.3539 - mae: 20.3197 - val_loss: 481.5445 - val_mse: 481.5445 - val_mae: 19.6138\n",
+-      "Epoch 2/50\n",
+-      "270/270 [==============================] - 0s 591us/sample - loss: 239.4999 - mse: 239.4999 - mae: 12.8064 - val_loss: 113.8561 - val_mse: 113.8561 - val_mae: 8.2962\n",
+-      "Epoch 3/50\n",
+-      "270/270 [==============================] - 0s 618us/sample - loss: 56.2921 - mse: 56.2921 - mae: 5.8988 - val_loss: 62.7912 - val_mse: 62.7912 - val_mae: 5.6465\n",
+-      "Epoch 4/50\n",
+-      "270/270 [==============================] - 0s 613us/sample - loss: 29.4994 - mse: 29.4994 - mae: 3.9653 - val_loss: 37.9256 - val_mse: 37.9256 - val_mae: 4.1730\n",
+-      "Epoch 5/50\n",
+-      "270/270 [==============================] - 0s 608us/sample - loss: 20.6919 - mse: 20.6919 - mae: 3.3022 - val_loss: 31.7489 - val_mse: 31.7489 - val_mae: 3.7113\n",
+-      "Epoch 6/50\n",
+-      "270/270 [==============================] - 0s 602us/sample - loss: 17.2701 - mse: 17.2701 - mae: 3.0291 - val_loss: 27.3921 - val_mse: 27.3921 - val_mae: 3.4958\n",
+-      "Epoch 7/50\n",
+-      "270/270 [==============================] - 0s 671us/sample - loss: 15.5172 - mse: 15.5172 - mae: 2.8537 - val_loss: 25.3208 - val_mse: 25.3208 - val_mae: 3.3650\n",
+-      "Epoch 8/50\n",
+-      "270/270 [==============================] - 0s 661us/sample - loss: 13.7548 - mse: 13.7548 - mae: 2.7089 - val_loss: 23.8920 - val_mse: 23.8920 - val_mae: 3.2746\n",
+-      "Epoch 9/50\n",
+-      "270/270 [==============================] - 0s 606us/sample - loss: 12.3745 - mse: 12.3745 - mae: 2.5662 - val_loss: 22.1294 - val_mse: 22.1294 - val_mae: 3.1509\n",
+-      "Epoch 10/50\n",
+-      "270/270 [==============================] - 0s 614us/sample - loss: 11.2424 - mse: 11.2424 - mae: 2.4804 - val_loss: 20.5718 - val_mse: 20.5718 - val_mae: 3.0461\n",
+-      "Epoch 11/50\n",
+-      "270/270 [==============================] - 0s 605us/sample - loss: 10.6098 - mse: 10.6098 - mae: 2.4178 - val_loss: 20.3467 - val_mse: 20.3467 - val_mae: 3.0251\n",
+-      "Epoch 12/50\n",
+-      "270/270 [==============================] - 0s 576us/sample - loss: 10.0011 - mse: 10.0011 - mae: 2.3257 - val_loss: 18.4283 - val_mse: 18.4283 - val_mae: 2.8938\n",
+-      "Epoch 13/50\n",
+-      "270/270 [==============================] - 0s 666us/sample - loss: 9.1287 - mse: 9.1287 - mae: 2.2384 - val_loss: 18.2024 - val_mse: 18.2024 - val_mae: 2.9116\n",
+-      "Epoch 14/50\n",
+-      "270/270 [==============================] - 0s 603us/sample - loss: 8.6211 - mse: 8.6211 - mae: 2.1980 - val_loss: 17.4749 - val_mse: 17.4749 - val_mae: 2.8290\n",
+-      "Epoch 15/50\n",
+-      "270/270 [==============================] - 0s 463us/sample - loss: 8.4558 - mse: 8.4558 - mae: 2.2087 - val_loss: 17.7878 - val_mse: 17.7878 - val_mae: 2.8516\n",
+-      "Epoch 16/50\n",
+-      "270/270 [==============================] - 0s 626us/sample - loss: 8.3626 - mse: 8.3626 - mae: 2.2031 - val_loss: 16.7101 - val_mse: 16.7101 - val_mae: 2.7820\n",
+-      "Epoch 17/50\n",
+-      "270/270 [==============================] - 0s 607us/sample - loss: 7.9180 - mse: 7.9180 - mae: 2.1265 - val_loss: 16.6064 - val_mse: 16.6064 - val_mae: 2.7419\n",
+-      "Epoch 18/50\n",
+-      "270/270 [==============================] - 0s 479us/sample - loss: 7.5552 - mse: 7.5552 - mae: 2.0235 - val_loss: 17.2872 - val_mse: 17.2872 - val_mae: 2.8539\n",
+-      "Epoch 19/50\n",
+-      "270/270 [==============================] - 0s 616us/sample - loss: 7.0971 - mse: 7.0971 - mae: 2.0038 - val_loss: 16.5110 - val_mse: 16.5110 - val_mae: 2.8042\n",
+-      "Epoch 20/50\n",
+-      "270/270 [==============================] - 0s 606us/sample - loss: 6.7068 - mse: 6.7068 - mae: 1.9539 - val_loss: 15.5886 - val_mse: 15.5886 - val_mae: 2.7048\n",
+-      "Epoch 21/50\n",
+-      "270/270 [==============================] - 0s 461us/sample - loss: 6.8542 - mse: 6.8542 - mae: 1.9979 - val_loss: 17.2378 - val_mse: 17.2378 - val_mae: 2.8853\n",
+-      "Epoch 22/50\n",
+-      "270/270 [==============================] - 0s 474us/sample - loss: 6.5719 - mse: 6.5719 - mae: 1.9312 - val_loss: 16.3043 - val_mse: 16.3043 - val_mae: 2.7756\n",
+-      "Epoch 23/50\n",
+-      "270/270 [==============================] - 0s 478us/sample - loss: 6.6161 - mse: 6.6161 - mae: 1.9572 - val_loss: 15.7992 - val_mse: 15.7992 - val_mae: 2.7219\n",
+-      "Epoch 24/50\n",
+-      "270/270 [==============================] - 0s 491us/sample - loss: 7.1269 - mse: 7.1269 - mae: 2.0137 - val_loss: 16.5402 - val_mse: 16.5402 - val_mae: 2.8005\n",
+-      "Epoch 25/50\n",
+-      "270/270 [==============================] - 0s 479us/sample - loss: 6.3382 - mse: 6.3382 - mae: 1.8540 - val_loss: 16.5034 - val_mse: 16.5034 - val_mae: 2.7864\n",
+-      "Epoch 26/50\n",
+-      "270/270 [==============================] - 0s 488us/sample - loss: 5.9442 - mse: 5.9442 - mae: 1.8251 - val_loss: 15.6558 - val_mse: 15.6558 - val_mae: 2.7102\n",
+-      "Epoch 27/50\n",
+-      "270/270 [==============================] - 0s 604us/sample - loss: 5.5832 - mse: 5.5832 - mae: 1.7432 - val_loss: 15.3021 - val_mse: 15.3021 - val_mae: 2.6862\n",
+-      "Epoch 28/50\n",
+-      "270/270 [==============================] - 0s 436us/sample - loss: 5.4530 - mse: 5.4530 - mae: 1.7354 - val_loss: 15.4570 - val_mse: 15.4570 - val_mae: 2.6846\n",
+-      "Epoch 29/50\n",
+-      "270/270 [==============================] - 0s 441us/sample - loss: 5.3070 - mse: 5.3070 - mae: 1.7079 - val_loss: 15.8510 - val_mse: 15.8510 - val_mae: 2.7644\n",
+-      "Epoch 30/50\n",
+-      "270/270 [==============================] - 0s 477us/sample - loss: 5.4157 - mse: 5.4157 - mae: 1.7321 - val_loss: 15.9160 - val_mse: 15.9160 - val_mae: 2.7134\n",
+-      "Epoch 31/50\n",
+-      "270/270 [==============================] - 0s 452us/sample - loss: 5.2639 - mse: 5.2639 - mae: 1.6981 - val_loss: 15.3554 - val_mse: 15.3554 - val_mae: 2.6662\n",
+-      "Epoch 32/50\n",
+-      "270/270 [==============================] - 0s 475us/sample - loss: 5.7687 - mse: 5.7687 - mae: 1.8045 - val_loss: 15.7151 - val_mse: 15.7151 - val_mae: 2.6867\n",
+-      "Epoch 33/50\n",
+-      "270/270 [==============================] - 0s 462us/sample - loss: 5.5210 - mse: 5.5210 - mae: 1.7367 - val_loss: 15.4227 - val_mse: 15.4227 - val_mae: 2.6561\n",
+-      "Epoch 34/50\n",
+-      "270/270 [==============================] - 0s 474us/sample - loss: 5.5663 - mse: 5.5663 - mae: 1.7294 - val_loss: 15.3376 - val_mse: 15.3376 - val_mae: 2.6991\n",
+-      "Epoch 35/50\n",
+-      "270/270 [==============================] - 0s 626us/sample - loss: 5.0063 - mse: 5.0063 - mae: 1.6196 - val_loss: 15.2642 - val_mse: 15.2642 - val_mae: 2.6796\n",
+-      "Epoch 36/50\n",
+-      "270/270 [==============================] - 0s 459us/sample - loss: 4.7251 - mse: 4.7251 - mae: 1.5727 - val_loss: 15.4858 - val_mse: 15.4858 - val_mae: 2.7288\n",
+-      "Epoch 37/50\n",
+-      "270/270 [==============================] - 0s 604us/sample - loss: 4.6394 - mse: 4.6394 - mae: 1.5854 - val_loss: 15.1139 - val_mse: 15.1139 - val_mae: 2.6305\n",
+-      "Epoch 38/50\n",
+-      "270/270 [==============================] - 0s 592us/sample - loss: 4.5669 - mse: 4.5669 - mae: 1.5548 - val_loss: 14.9898 - val_mse: 14.9898 - val_mae: 2.6340\n",
+-      "Epoch 39/50\n",
+-      "270/270 [==============================] - 0s 458us/sample - loss: 4.4480 - mse: 4.4480 - mae: 1.5334 - val_loss: 15.6389 - val_mse: 15.6389 - val_mae: 2.7337\n",
+-      "Epoch 40/50\n",
+-      "270/270 [==============================] - 0s 455us/sample - loss: 4.4119 - mse: 4.4119 - mae: 1.5426 - val_loss: 15.0723 - val_mse: 15.0723 - val_mae: 2.6709\n",
+-      "Epoch 41/50\n",
+-      "270/270 [==============================] - 0s 473us/sample - loss: 4.0797 - mse: 4.0797 - mae: 1.4725 - val_loss: 15.4706 - val_mse: 15.4706 - val_mae: 2.6707\n",
+-      "Epoch 42/50\n",
+-      "270/270 [==============================] - 0s 449us/sample - loss: 4.0619 - mse: 4.0619 - mae: 1.4692 - val_loss: 15.2423 - val_mse: 15.2423 - val_mae: 2.6165\n",
+-      "Epoch 43/50\n",
+-      "270/270 [==============================] - 0s 465us/sample - loss: 4.1861 - mse: 4.1861 - mae: 1.5076 - val_loss: 15.7510 - val_mse: 15.7510 - val_mae: 2.7279\n",
+-      "Epoch 44/50\n",
+-      "270/270 [==============================] - 0s 462us/sample - loss: 4.1128 - mse: 4.1128 - mae: 1.4810 - val_loss: 15.4814 - val_mse: 15.4814 - val_mae: 2.6562\n",
+-      "Epoch 45/50\n",
+-      "270/270 [==============================] - 0s 441us/sample - loss: 4.2171 - mse: 4.2171 - mae: 1.5205 - val_loss: 16.3839 - val_mse: 16.3839 - val_mae: 2.8194\n",
+-      "Epoch 46/50\n",
+-      "270/270 [==============================] - 0s 422us/sample - loss: 4.2609 - mse: 4.2609 - mae: 1.5548 - val_loss: 15.3587 - val_mse: 15.3587 - val_mae: 2.7161\n",
+-      "Epoch 47/50\n",
+-      "270/270 [==============================] - 0s 454us/sample - loss: 4.4635 - mse: 4.4635 - mae: 1.5440 - val_loss: 15.7736 - val_mse: 15.7736 - val_mae: 2.7184\n",
+-      "Epoch 48/50\n",
+-      "270/270 [==============================] - 0s 426us/sample - loss: 3.7406 - mse: 3.7406 - mae: 1.4147 - val_loss: 15.6718 - val_mse: 15.6718 - val_mae: 2.7468\n",
+-      "Epoch 49/50\n",
+-      "270/270 [==============================] - 0s 445us/sample - loss: 3.6173 - mse: 3.6173 - mae: 1.3816 - val_loss: 15.7291 - val_mse: 15.7291 - val_mae: 2.7789\n",
+-      "Epoch 50/50\n",
+-      "270/270 [==============================] - 0s 430us/sample - loss: 3.6303 - mse: 3.6303 - mae: 1.4266 - val_loss: 15.4937 - val_mse: 15.4937 - val_mae: 2.7390\n"
++     "ename": "ResourceExhaustedError",
++     "evalue": "OOM when allocating tensor with shape[13,64] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]",
++     "output_type": "error",
++     "traceback": [
++      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
++      "\u001b[0;31mResourceExhaustedError\u001b[0m                    Traceback (most recent call last)",
++      "\u001b[0;32m<ipython-input-10-cd662b638516>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     11\u001b[0m \u001b[0;31m# Create Model\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     12\u001b[0m \u001b[0mmodel\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mSequential\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 13\u001b[0;31m \u001b[0mmodel\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0madd\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mDense\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m64\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mactivation\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m'relu'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0minput_shape\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minputs\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     14\u001b[0m \u001b[0mmodel\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0madd\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mDense\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m64\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mactivation\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m'relu'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     15\u001b[0m \u001b[0mmodel\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0madd\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mDense\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m64\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mactivation\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m'relu'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/training/tracking/base.py\u001b[0m in \u001b[0;36m_method_wrapper\u001b[0;34m(self, *args, **kwargs)\u001b[0m\n\u001b[1;32m    455\u001b[0m     \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_self_setattr_tracking\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mFalse\u001b[0m  \u001b[0;31m# pylint: disable=protected-access\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    456\u001b[0m     \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 457\u001b[0;31m       \u001b[0mresult\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mmethod\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    458\u001b[0m     \u001b[0;32mfinally\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    459\u001b[0m       \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_self_setattr_tracking\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mprevious_value\u001b[0m  \u001b[0;31m# pylint: disable=protected-access\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/engine/sequential.py\u001b[0m in \u001b[0;36madd\u001b[0;34m(self, layer)\u001b[0m\n\u001b[1;32m    176\u001b[0m           \u001b[0;31m# and create the node connecting the current layer\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    177\u001b[0m           \u001b[0;31m# to the input layer we just created.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 178\u001b[0;31m           \u001b[0mlayer\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    179\u001b[0m           \u001b[0mset_inputs\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mTrue\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    180\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/engine/base_layer.py\u001b[0m in \u001b[0;36m__call__\u001b[0;34m(self, inputs, *args, **kwargs)\u001b[0m\n\u001b[1;32m    815\u001b[0m           \u001b[0;31m# Build layer if applicable (if the `build` method has been\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    816\u001b[0m           \u001b[0;31m# overridden).\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 817\u001b[0;31m           \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_maybe_build\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minputs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    818\u001b[0m           \u001b[0mcast_inputs\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_maybe_cast_inputs\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minputs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    819\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/engine/base_layer.py\u001b[0m in \u001b[0;36m_maybe_build\u001b[0;34m(self, inputs)\u001b[0m\n\u001b[1;32m   2139\u001b[0m         \u001b[0;31m# operations.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2140\u001b[0m         \u001b[0;32mwith\u001b[0m \u001b[0mtf_utils\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmaybe_init_scope\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2141\u001b[0;31m           \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mbuild\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput_shapes\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2142\u001b[0m       \u001b[0;31m# We must set self.built since user defined build functions are not\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2143\u001b[0m       \u001b[0;31m# constrained to set self.built.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/layers/core.py\u001b[0m in \u001b[0;36mbuild\u001b[0;34m(self, input_shape)\u001b[0m\n\u001b[1;32m   1025\u001b[0m         \u001b[0mconstraint\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mkernel_constraint\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1026\u001b[0m         \u001b[0mdtype\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdtype\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1027\u001b[0;31m         trainable=True)\n\u001b[0m\u001b[1;32m   1028\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0muse_bias\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1029\u001b[0m       self.bias = self.add_weight(\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/engine/base_layer.py\u001b[0m in \u001b[0;36madd_weight\u001b[0;34m(self, name, shape, dtype, initializer, regularizer, trainable, constraint, partitioner, use_resource, synchronization, aggregation, **kwargs)\u001b[0m\n\u001b[1;32m    520\u001b[0m         \u001b[0mcollections\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mcollections_arg\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    521\u001b[0m         \u001b[0msynchronization\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0msynchronization\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 522\u001b[0;31m         aggregation=aggregation)\n\u001b[0m\u001b[1;32m    523\u001b[0m     \u001b[0mbackend\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtrack_variable\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvariable\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    524\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/training/tracking/base.py\u001b[0m in \u001b[0;36m_add_variable_with_custom_getter\u001b[0;34m(self, name, shape, dtype, initializer, getter, overwrite, **kwargs_for_getter)\u001b[0m\n\u001b[1;32m    742\u001b[0m         \u001b[0mdtype\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mdtype\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    743\u001b[0m         \u001b[0minitializer\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0minitializer\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 744\u001b[0;31m         **kwargs_for_getter)\n\u001b[0m\u001b[1;32m    745\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    746\u001b[0m     \u001b[0;31m# If we set an initializer and the variable processed it, tracking will not\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/engine/base_layer_utils.py\u001b[0m in \u001b[0;36mmake_variable\u001b[0;34m(name, shape, dtype, initializer, trainable, caching_device, validate_shape, constraint, use_resource, collections, synchronization, aggregation, partitioner)\u001b[0m\n\u001b[1;32m    137\u001b[0m       \u001b[0msynchronization\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0msynchronization\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    138\u001b[0m       \u001b[0maggregation\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0maggregation\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 139\u001b[0;31m       shape=variable_shape if variable_shape else None)\n\u001b[0m\u001b[1;32m    140\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    141\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/variables.py\u001b[0m in \u001b[0;36m__call__\u001b[0;34m(cls, *args, **kwargs)\u001b[0m\n\u001b[1;32m    256\u001b[0m   \u001b[0;32mdef\u001b[0m \u001b[0m__call__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcls\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    257\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mcls\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0mVariableV1\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 258\u001b[0;31m       \u001b[0;32mreturn\u001b[0m \u001b[0mcls\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_variable_v1_call\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    259\u001b[0m     \u001b[0;32melif\u001b[0m \u001b[0mcls\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0mVariable\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    260\u001b[0m       \u001b[0;32mreturn\u001b[0m \u001b[0mcls\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_variable_v2_call\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/variables.py\u001b[0m in \u001b[0;36m_variable_v1_call\u001b[0;34m(cls, initial_value, trainable, collections, validate_shape, caching_device, name, variable_def, dtype, expected_shape, import_scope, constraint, use_resource, synchronization, aggregation, shape)\u001b[0m\n\u001b[1;32m    217\u001b[0m         \u001b[0msynchronization\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0msynchronization\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    218\u001b[0m         \u001b[0maggregation\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0maggregation\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 219\u001b[0;31m         shape=shape)\n\u001b[0m\u001b[1;32m    220\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    221\u001b[0m   def _variable_v2_call(cls,\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/variables.py\u001b[0m in \u001b[0;36m<lambda>\u001b[0;34m(**kwargs)\u001b[0m\n\u001b[1;32m    195\u001b[0m                         shape=None):\n\u001b[1;32m    196\u001b[0m     \u001b[0;34m\"\"\"Call on Variable class. Useful to force the signature.\"\"\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 197\u001b[0;31m     \u001b[0mprevious_getter\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mlambda\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mdefault_variable_creator\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;32mNone\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    198\u001b[0m     \u001b[0;32mfor\u001b[0m \u001b[0m_\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgetter\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mops\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget_default_graph\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_variable_creator_stack\u001b[0m\u001b[0;34m:\u001b[0m  \u001b[0;31m# pylint: disable=protected-access\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    199\u001b[0m       \u001b[0mprevious_getter\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_make_getter\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mgetter\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mprevious_getter\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/variable_scope.py\u001b[0m in \u001b[0;36mdefault_variable_creator\u001b[0;34m(next_creator, **kwargs)\u001b[0m\n\u001b[1;32m   2505\u001b[0m         \u001b[0msynchronization\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0msynchronization\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2506\u001b[0m         \u001b[0maggregation\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0maggregation\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2507\u001b[0;31m         shape=shape)\n\u001b[0m\u001b[1;32m   2508\u001b[0m   \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2509\u001b[0m     return variables.RefVariable(\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/variables.py\u001b[0m in \u001b[0;36m__call__\u001b[0;34m(cls, *args, **kwargs)\u001b[0m\n\u001b[1;32m    260\u001b[0m       \u001b[0;32mreturn\u001b[0m \u001b[0mcls\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_variable_v2_call\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    261\u001b[0m     \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 262\u001b[0;31m       \u001b[0;32mreturn\u001b[0m \u001b[0msuper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mVariableMetaclass\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mcls\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__call__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    263\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    264\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py\u001b[0m in \u001b[0;36m__init__\u001b[0;34m(self, initial_value, trainable, collections, validate_shape, caching_device, name, dtype, variable_def, import_scope, constraint, distribute_strategy, synchronization, aggregation, shape)\u001b[0m\n\u001b[1;32m   1404\u001b[0m           \u001b[0maggregation\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0maggregation\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1405\u001b[0m           \u001b[0mshape\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mshape\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1406\u001b[0;31m           distribute_strategy=distribute_strategy)\n\u001b[0m\u001b[1;32m   1407\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1408\u001b[0m   def _init_from_args(self,\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py\u001b[0m in \u001b[0;36m_init_from_args\u001b[0;34m(self, initial_value, trainable, collections, caching_device, name, dtype, constraint, synchronization, aggregation, distribute_strategy, shape)\u001b[0m\n\u001b[1;32m   1535\u001b[0m           \u001b[0;32mwith\u001b[0m \u001b[0mops\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mname_scope\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Initializer\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdevice_context_manager\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;32mNone\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1536\u001b[0m             initial_value = ops.convert_to_tensor(\n\u001b[0;32m-> 1537\u001b[0;31m                 \u001b[0minitial_value\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mif\u001b[0m \u001b[0minit_from_fn\u001b[0m \u001b[0;32melse\u001b[0m \u001b[0minitial_value\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1538\u001b[0m                 name=\"initial_value\", dtype=dtype)\n\u001b[1;32m   1539\u001b[0m           \u001b[0;32mif\u001b[0m \u001b[0mshape\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/keras/engine/base_layer_utils.py\u001b[0m in \u001b[0;36m<lambda>\u001b[0;34m()\u001b[0m\n\u001b[1;32m    117\u001b[0m           (type(init_ops.Initializer), type(init_ops_v2.Initializer))):\n\u001b[1;32m    118\u001b[0m         \u001b[0minitializer\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minitializer\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 119\u001b[0;31m       \u001b[0minit_val\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mlambda\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0minitializer\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mshape\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mdtype\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    120\u001b[0m       \u001b[0mvariable_dtype\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mdtype\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mbase_dtype\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    121\u001b[0m   \u001b[0;32mif\u001b[0m \u001b[0muse_resource\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops_v2.py\u001b[0m in \u001b[0;36m__call__\u001b[0;34m(self, shape, dtype)\u001b[0m\n\u001b[1;32m    435\u001b[0m     \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    436\u001b[0m       \u001b[0mlimit\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mmath\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msqrt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m3.0\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0mscale\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 437\u001b[0;31m       \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_random_generator\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrandom_uniform\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mshape\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m-\u001b[0m\u001b[0mlimit\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mlimit\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    438\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    439\u001b[0m   \u001b[0;32mdef\u001b[0m \u001b[0mget_config\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops_v2.py\u001b[0m in \u001b[0;36mrandom_uniform\u001b[0;34m(self, shape, minval, maxval, dtype)\u001b[0m\n\u001b[1;32m    798\u001b[0m       \u001b[0mop\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mrandom_ops\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrandom_uniform\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    799\u001b[0m     return op(\n\u001b[0;32m--> 800\u001b[0;31m         shape=shape, minval=minval, maxval=maxval, dtype=dtype, seed=self.seed)\n\u001b[0m\u001b[1;32m    801\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    802\u001b[0m   \u001b[0;32mdef\u001b[0m \u001b[0mtruncated_normal\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mshape\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmean\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mstddev\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/random_ops.py\u001b[0m in \u001b[0;36mrandom_uniform\u001b[0;34m(shape, minval, maxval, dtype, seed, name)\u001b[0m\n\u001b[1;32m    243\u001b[0m           shape, minval, maxval, seed=seed1, seed2=seed2, name=name)\n\u001b[1;32m    244\u001b[0m     \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 245\u001b[0;31m       \u001b[0mrnd\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mgen_random_ops\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrandom_uniform\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mshape\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mseed\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mseed1\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mseed2\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mseed2\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    246\u001b[0m       \u001b[0mresult\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mmath_ops\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0madd\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrnd\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mmaxval\u001b[0m \u001b[0;34m-\u001b[0m \u001b[0mminval\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mminval\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mname\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    247\u001b[0m     \u001b[0;31m# TODO(b/132092188): C++ shape inference inside functional ops does not\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/gen_random_ops.py\u001b[0m in \u001b[0;36mrandom_uniform\u001b[0;34m(shape, dtype, seed, seed2, name)\u001b[0m\n\u001b[1;32m    810\u001b[0m       \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    811\u001b[0m         \u001b[0mmessage\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmessage\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 812\u001b[0;31m       \u001b[0m_six\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mraise_from\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0m_core\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_status_to_exception\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0me\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcode\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmessage\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    813\u001b[0m   \u001b[0;31m# Add nodes to the TensorFlow graph.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    814\u001b[0m   \u001b[0mdtype\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_execute\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmake_type\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdtype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m\"dtype\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
++      "\u001b[0;32m/usr/lib/python3/dist-packages/six.py\u001b[0m in \u001b[0;36mraise_from\u001b[0;34m(value, from_value)\u001b[0m\n",
++      "\u001b[0;31mResourceExhaustedError\u001b[0m: OOM when allocating tensor with shape[13,64] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]"
+      ]
+-    },
+-    {
+-     "data": {
+-      "text/plain": [
+-       "<tensorflow.python.keras.callbacks.History at 0x7f315c319be0>"
+-      ]
+-     },
+-     "execution_count": 8,
+-     "metadata": {},
+-     "output_type": "execute_result"
+     }
+    ],
+    "source": [

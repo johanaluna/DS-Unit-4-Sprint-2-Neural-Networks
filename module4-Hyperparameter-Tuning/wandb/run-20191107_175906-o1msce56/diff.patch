@@ -1,0 +1,60 @@
+diff --git a/module4-Hyperparameter-Tuning/LS_DS_424_Hyperparameter_Tuning_Lecture.ipynb b/module4-Hyperparameter-Tuning/LS_DS_424_Hyperparameter_Tuning_Lecture.ipynb
+index 7e1d510..1da7c3d 100644
+--- a/module4-Hyperparameter-Tuning/LS_DS_424_Hyperparameter_Tuning_Lecture.ipynb
++++ b/module4-Hyperparameter-Tuning/LS_DS_424_Hyperparameter_Tuning_Lecture.ipynb
+@@ -439,7 +439,7 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 4,
++   "execution_count": 3,
+    "metadata": {
+     "colab": {
+      "base_uri": "https://localhost:8080/",
+@@ -462,13 +462,13 @@
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+-      "Best: 0.65234375 using {'batch_size': 10, 'epochs': 20}\n",
+-      "Means: 0.65234375, Stdev: 0.033298728782667764 with: {'batch_size': 10, 'epochs': 20}\n",
+-      "Means: 0.6263020833333334, Stdev: 0.01813592223591682 with: {'batch_size': 20, 'epochs': 20}\n",
+-      "Means: 0.6041666666666666, Stdev: 0.037782859709757574 with: {'batch_size': 40, 'epochs': 20}\n",
+-      "Means: 0.5533854166666666, Stdev: 0.03210632293213009 with: {'batch_size': 60, 'epochs': 20}\n",
+-      "Means: 0.61328125, Stdev: 0.024079742199097563 with: {'batch_size': 80, 'epochs': 20}\n",
+-      "Means: 0.5611979166666666, Stdev: 0.038450060052691144 with: {'batch_size': 100, 'epochs': 20}\n"
++      "Best: 0.609375 using {'batch_size': 20, 'epochs': 20}\n",
++      "Means: 0.5846354166666666, Stdev: 0.03897559777889522 with: {'batch_size': 10, 'epochs': 20}\n",
++      "Means: 0.609375, Stdev: 0.01149968862803105 with: {'batch_size': 20, 'epochs': 20}\n",
++      "Means: 0.5481770833333334, Stdev: 0.05425173608333245 with: {'batch_size': 40, 'epochs': 20}\n",
++      "Means: 0.5950520833333334, Stdev: 0.056186065131227654 with: {'batch_size': 60, 'epochs': 20}\n",
++      "Means: 0.515625, Stdev: 0.09668790737363006 with: {'batch_size': 80, 'epochs': 20}\n",
++      "Means: 0.5299479166666666, Stdev: 0.03210632293213009 with: {'batch_size': 100, 'epochs': 20}\n"
+      ]
+     }
+    ],
+@@ -541,7 +541,7 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 5,
++   "execution_count": 4,
+    "metadata": {
+     "colab": {
+      "base_uri": "https://localhost:8080/",
+@@ -556,11 +556,11 @@
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+-      "Best: 0.7044270833333334 using {'batch_size': 20, 'epochs': 200}\n",
+-      "Means: 0.6666666666666666, Stdev: 0.028940248399600087 with: {'batch_size': 20, 'epochs': 20}\n",
+-      "Means: 0.6588541666666666, Stdev: 0.028940248399600087 with: {'batch_size': 20, 'epochs': 40}\n",
+-      "Means: 0.6848958333333334, Stdev: 0.03498705427745938 with: {'batch_size': 20, 'epochs': 60}\n",
+-      "Means: 0.7044270833333334, Stdev: 0.018414239093399672 with: {'batch_size': 20, 'epochs': 200}\n"
++      "Best: 0.69921875 using {'batch_size': 20, 'epochs': 200}\n",
++      "Means: 0.609375, Stdev: 0.04910080113272084 with: {'batch_size': 20, 'epochs': 20}\n",
++      "Means: 0.6419270833333334, Stdev: 0.012889967365379774 with: {'batch_size': 20, 'epochs': 40}\n",
++      "Means: 0.6432291666666666, Stdev: 0.03410364805653332 with: {'batch_size': 20, 'epochs': 60}\n",
++      "Means: 0.69921875, Stdev: 0.01940060472103039 with: {'batch_size': 20, 'epochs': 200}\n"
+      ]
+     }
+    ],
